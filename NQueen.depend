@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1611930660 source:d:\dev works\nqueen\src\nq.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<avl.h>
+	<stack.h>
+	<list.h>
+	"nq.h"
+
+1611919770 d:\dev works\nqueen\src\nq.h
+	<avl.h>
+	<stack.h>
+	<list.h>
+
+1586796264 d:\dev works\data structure & algorithms\stack queue adt\trunk\src\stack.h
+	<list.h>
+
+1586796037 d:\dev works\data structure & algorithms\linked list adt\trunk\src\list.h
+	<stdlib.h>
+
+1611931116 source:d:\dev works\nqueen\src\nq_main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<list.h>
+	<stack.h>
+	"nq.h"
+
+1611782673 d:\dev works\data structure & algorithms\dictionary adt\trunk\src\avl.h
+	"bst.h"
+
+1611783230 d:\dev works\data structure & algorithms\dictionary adt\trunk\src\bst.h
+	<list.h>
+	<dlist.h>
+	<queue.h>
+
+1586796037 d:\dev works\data structure & algorithms\linked list adt\trunk\src\dlist.h
+	<stdlib.h>
+
+1586796264 d:\dev works\data structure & algorithms\stack queue adt\trunk\src\queue.h
+	<list.h>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NQueen" />
+		<Option pch_mode="2" />
+		<Option default_target="Release64" />
+		<Option compiler="tdm-gcc-32-mingw" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/x86/NQueen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/x86/" />
+				<Option type="1" />
+				<Option compiler="tdm-gcc-32-mingw" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#liblinkedlist.LIB)/x86" />
+					<Add directory="$(#libstq.LIB)/x86" />
+					<Add directory="$(#libdictionary.LIB)/x86" />
+				</Linker>
+			</Target>
+			<Target title="Debug64">
+				<Option output="bin/Debug/x64/NQueen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/x64/" />
+				<Option type="1" />
+				<Option compiler="tdm-gcc-64-mingw-w64" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-m64" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add directory="$(#liblinkedlist.LIB)/x64" />
+					<Add directory="$(#libstq.LIB)/x64" />
+					<Add directory="$(#libdictionary.LIB)/x64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/x86/NQueen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/x86/" />
+				<Option type="1" />
+				<Option compiler="tdm-gcc-32-mingw" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="$(#liblinkedlist.LIB)/x86" />
+					<Add directory="$(#libstq.LIB)/x86" />
+					<Add directory="$(#libdictionary.LIB)/x86" />
+				</Linker>
+			</Target>
+			<Target title="Release64">
+				<Option output="bin/Release/x64/NQueen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/x64/" />
+				<Option type="1" />
+				<Option compiler="tdm-gcc-64-mingw-w64" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+					<Add directory="$(#liblinkedlist.LIB)/x64" />
+					<Add directory="$(#libstq.LIB)/x64" />
+					<Add directory="$(#libdictionary.LIB)/x64" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Debug;Debug64;Release;Release64;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(#liblinkedlist.INCLUDE)" />
+			<Add directory="$(#libstq.INCLUDE)" />
+			<Add directory="$(#libdictionary.INCLUDE)" />
+		</Compiler>
+		<Linker>
+			<Add library="dictionary" />
+			<Add library="stq" />
+			<Add library="linkedlist" />
+		</Linker>
+		<Unit filename="src/nq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nq.h" />
+		<Unit filename="src/nq_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
